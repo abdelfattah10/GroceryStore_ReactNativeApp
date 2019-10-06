@@ -46,7 +46,29 @@ const AppInterface = createStackNavigator({
       )
     })
   },
-    CategoryDetails: { screen: CategoryDetails, navigationOptions: ({ navigation }) => { return { headerTintColor: 'white', headerTransparent: true, headerStyle: { borderBottomWidth: 0, } } } },
+    CategoryDetails: { screen: CategoryDetails, navigationOptions: ({ navigation }) => { return { headerTintColor: 'white', headerTransparent: true, headerStyle: { borderBottomWidth: 0, },
+    headerRight: (
+            <View style={{flexDirection: 'row'}}>
+              <View>
+                <Icon
+                  name='magnify'
+                  type='material-community'
+                  color='white'
+                  size={30}
+                  containerStyle={{marginRight: 20}}
+                />
+              </View>
+              <View>
+                <Icon
+                  name='cart-minus'
+                  type='material-community'
+                  color='white'
+                  size={30}
+                  containerStyle={{marginRight: 30}}
+                />
+              </View>
+            </View>
+          ) } } },
     ProductDetails: { screen: ProductDetails, navigationOptions: ({ navigation }) => ({ title: 'Product Details' }) },
   },
 {

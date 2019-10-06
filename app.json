@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "GroceryStore",
-    "slug": "bit68Task",
+    "slug": "GroceryStore",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
@@ -24,7 +24,11 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.test.test"
+    },
+    "android": {
+      "package": "com.test.test"
     }
   }
 }

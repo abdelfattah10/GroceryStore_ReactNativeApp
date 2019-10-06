@@ -10,7 +10,6 @@ class CategoriesDetails extends Component {
 
 
   _renderItem = (data, i) => {
-    console.log(1, data);
     return (
         <View style={styles.item} key={i}>
           <TouchableOpacity style={{flex: 1, borderColor: '#f5f5f5', borderWidth: 1}} onPress={()=> this.props.navigation.navigate('ProductDetails', {data: data.name})} activeOpacity={0.5}>
